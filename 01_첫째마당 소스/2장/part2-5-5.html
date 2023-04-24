@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<title> 비교 연산자 </title>
+	<style>
+		* {
+			color: #6969ff;
+			font-size: 3vw;
+			margin: 10px 20px;
+			line-height: 1.7;
+		}
+	</style>
+
 	<script>
 		var a = 10;
 		var b = 20;
@@ -10,20 +20,40 @@
 		var f = "20";
 		var result;
 
-		result = a > b;  // false
-		document.write(result, "<br>");
-		result = a < b;  // true
-		document.write(result, "<br>");
-		result = a <= b; // true
-		document.write(result, "<br>");
-		result = b == f;  // true
-		document.write(result, "<br>");
-		result = a != b;   // true
-		document.write(result, "<br>");
-		result = b === f;  // false
-		document.write(result, "<br>");
+		// result = a > b;  // false
+		// document.write(result, "<br>");
+		// result = a < b;  // true
+		// document.write(result, "<br>");
+		// result = a <= b; // true
+		// document.write(result, "<br>");
+		// result = b == f;  // true
+		// document.write(result, "<br>");
+		// result = a != b;   // true
+		// document.write(result, "<br>");
+		// result = b === f;  // false
+		// document.write(result, "<br>");
+
+		result = a > b;
+		document.writeln(result);
+
+		result = a < b;
+		document.writeln(result);
+
+		result = a <= b;
+		document.writeln(result);
+
+		result = b == f;
+		document.writeln(result);
+
+		result = a != b;
+		document.writeln(result);
+
+		result = b === f;
+		document.writeln(result);
 	</script>
 </head>
+
 <body>
 </body>
+
 </html>

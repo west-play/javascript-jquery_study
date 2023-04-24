@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title> 증감 연산자 </title>
-<script>
-	var num1 = 10;
-	var num2 = 20;
-	var result;
-	 
-	num1--; //9
-	document.write(num1, "<br>");
+	<meta charset="UTF-8">
+	<title> 증감 연산자 </title>
+	<style>
+		* {
+			color: #6969ff;
+			font-size: 3vw;
+			margin: 10px 20px;
+			/* text-align: center; */
+			line-height: 1.7;
+		}
+	</style>
+	<script>
+		// var num1 = 10;
+		// var num2 = 20;
+		// var result;
+		//  
+		// num1--; //9
+		// document.write(num1, "<br>");
 
-	num1++; //10
-	document.write(num1, "<br>");    
+		// num1++; //10
+		// document.write(num1, "<br>");    
 
-	result = num2++;  //result: 20, num2: 21  
-	document.write(result, "<br>"); 
+		// result = num2++;  //result: 20, num2: 21  
+		// document.write(result, "<br>"); 
 
-	result = ++num2;  //result: 22, num2: 22  
-	document.write(result, "<br>"); 
-</script>
+		// result = ++num2;  //result: 22, num2: 22  
+		// document.write(result, "<br>"); 
+
+
+		var num1 = 10;
+		var num2 = 20;
+		var result;
+
+		num1--;
+		document.write(num1, "<br>");
+
+		num1++;
+		document.write(num1, "<br>");
+
+		result = num2++;
+		document.write(result, "&nbsp&nbsp&nbsp"); document.write(num2, "<br>");
+
+		result = ++num2;
+		document.write(result, "&nbsp&nbsp&nbsp"); document.write(num2, "<br>");
+	</script>
 </head>
+
 <body>
 </body>
+
 </html>
