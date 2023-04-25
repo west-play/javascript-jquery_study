@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset = "UTF-8">
-<title> 배열객체 </title>
-<script>
-	var greenArr = ["교대", "방배", "강남"];
-	var yellowArr = ["미금","정자","수서"];
+	<meta charset="UTF-8">
+	<title> 배열객체 </title>
+	<script>
+		var greenArr = ["교대", "방배", "강남"];
+		var yellowArr = ["미금", "정자", "수서"];
 
-	greenArr.splice(2, 1, "서초", "역삼");
-	console.log(greenArr);
+		// greenArr.splice(2, 1, "서초", "역삼");
+		// console.log(greenArr);
 
-	var data1 = yellowArr.pop( );
-	var data2 = yellowArr.shift( );
+		// var data1 = yellowArr.pop( );
+		// var data2 = yellowArr.shift( );
 
-	yellowArr.push(data2);
-	console.log(yellowArr);
+		// yellowArr.push(data2);
+		// console.log(yellowArr);
 
-	yellowArr.unshift(data1);
-	console.log(yellowArr);
-</script>
+		// yellowArr.unshift(data1);
+		// console.log(yellowArr);
+		greenArr.splice(1, 1, "서초", "역삼");
+		console.log(greenArr);
+		document.writeln(greenArr, "<br><br><br>");
+
+		greenArr.splice(2, 1, "서초", "역삼");
+		console.log(greenArr);
+		document.writeln(greenArr, "<br><br><br>");
+
+
+		var data1 = yellowArr.pop();
+		var data2 = yellowArr.shift();
+		console.log(data1);
+		document.writeln(data1, "<br><br><br>");
+		console.log(data2);
+		document.writeln(data2, "<br><br><br>");
+
+
+		yellowArr.push(data2);
+		console.log(yellowArr);
+		document.writeln(yellowArr, "<br><br><br>");
+
+		yellowArr.unshift(data2);
+		console.log(yellowArr);
+		document.writeln(yellowArr, "<br><br><br>");
+
+
+
+
+	</script>
 </head>
+
 <body>
 </body>
+
 </html>

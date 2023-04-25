@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset = "UTF-8">
-<title> 배열객체 </title>
-<script>
-	var arr = [30, "따르릉", true];
+	<meta charset="UTF-8">
+	<title> 배열객체 </title>
+	<script>
+		// var arr = [30, "따르릉", true];
 
-	document.write("<h3>배열값 가져오기-1</h3>");
-	document.write(arr[0], "<br>");
-	document.write(arr[1], "<br>");
-	document.write(arr[2], "<br>");
+		// document.write("<h3>배열값 가져오기-1</h3>");
+		// document.write(arr[0], "<br>");
+		// document.write(arr[1], "<br>");
+		// document.write(arr[2], "<br>");
 
-	document.write("<h3>배열값 가져오기-2</h3>");
-	for(var i = 0; i < arr.length; i++){
-		document.write(arr[i], "<br>");
-	}
+		// document.write("<h3>배열값 가져오기-2</h3>");
+		// for(var i = 0; i < arr.length; i++){
+		// 	document.write(arr[i], "<br>");
+		// }
 
-	document.write("<h3>배열값 가져오기-3</h3>");
-	for(i in arr){
-		document.write(arr[i], "<br>");
-	}
-</script>
+		// document.write("<h3>배열값 가져오기-3</h3>");
+		// for(i in arr){
+		// 	document.write(arr[i], "<br>");
+		// }
+
+		var arr = [30, "따르릉", false];
+
+		document.writeln("<h3>배열값 가져오기-1</h3>");
+		document.writeln(arr[0]);
+		document.writeln(arr[1]);
+		document.writeln(arr[2], "<br><br><br>");
+
+
+		document.writeln("<h3>배열값 가져오기-2</h3>");
+		for (var i = 0; i < arr.length; i++) {
+			document.writeln(arr[i]);
+		}
+		document.writeln("<br><br><br>");
+
+
+		document.writeln("<h3>배열값 가져오기-3</h3>");
+		for (i in arr) {
+			document.writeln(arr[i]);
+		}
+	</script>
 </head>
+
 <body>
 </body>
+
 </html>
