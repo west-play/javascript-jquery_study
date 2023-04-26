@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset = "UTF-8">
-<title> 함수 </title>
-<script>
-	var color=["white", "yellow", "aqua", "purple"];
-			
-	var i=0;
-	function changeColor() {
-		i++;
-		if(i >= color.length) {
-			i = 0;
+	<meta charset="UTF-8">
+	<title> 함수 </title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
 		}
-		
-		var bodyTag = document.getElementById("theBody");
-		bodyTag.style.backgroundColor = color[i];
-	}
-</script>
+
+		button {
+			background-color: #3A3AB0;
+			color: #fff;
+			/* margin: 40vh 70vw; */
+			width: 30vw;
+			height: 20vh;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -10vh 0 0 -15vw;
+			border-radius: 100px;
+			font-size: 2vw;
+			border: solid 3px #000;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		var color = ['#6969ff', '#60E5AD', '#FFE177', '#EBC0FF'];
+
+		// var i = 0;
+		// function changeColor() {
+		// 	i++;
+		// 	if (i >= color.length) {
+		// 		i = 0;
+		// 	}
+
+		// 	var bodyTag = document.getElementById("theBody");
+		// 	bodyTag.style.backgroundColor = color[i];
+		// }
+
+
+		var i = 0;
+		function changeColor() {
+			i++;
+			if (i >= color.length) {
+				i = 0;
+			}
+
+			var bodyTag = document.getElementById("theBody");
+			bodyTag.style.backgroundColor = color[i]
+		}
+	</script>
 </head>
+
 <body id="theBody">
-  <button onclick="changeColor();">배경색 바꾸기</button>
+	<button onclick="changeColor();">COLOR CHANGE</button>
 </body>
+
 </html>
