@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset = "UTF-8">
-<title> 함수 </title>
-<script>
 
-</script>
+<head>
+    <meta charset="UTF-8">
+    <title> 평균구하기_test </title>
+    <script>
+        function testAvg(arrData) {
+            var sum = 0;
+            for (var i = 0; i < arrData.length; i++) {
+                sum += Number(prompt(arrData[i] + "몇점?"));
+            }
+
+            var avg = sum / arrData.length;
+            return avg;
+        }
+
+        let arrSubject = ["국어", "수학", "영어", "한국사"];
+        let result = testAvg(arrSubject);
+
+        document.write("평균은&nbsp" + result);
+    </script>
 </head>
+
 <body>
 </body>
+
 </html>

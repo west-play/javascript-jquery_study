@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset = "UTF-8">
-<title> 함수 </title>
-<script>
-	var rightId = "korea";
-	var rightPw = "1234";
-</script>
+	<meta charset="UTF-8">
+	<title> 함수 </title>
+	<script>
+		var rightId = "seoyounju";
+		var rightPw = "1234";
+
+		function login(id, pw) {
+			if (id == rightId) {
+				if (pw == rightPw) {
+					document.write(id + "로그인 성공🫸🏻🫷🏻");
+				} else {
+					alert(pw + "는 틀린 비밀번호");
+					document.write(pw + "는 틀린 비밀번호⚡️");
+				}
+			} else {
+				alert(pw + "는 틀린 아이디");
+				document.write(pw + "는 틀린 아이디💦");
+			}
+		}
+
+		var userId = prompt("아이디 입력 하세유", "seoyounju");
+		var userPw = prompt("비밀번호 입력 하세유", "1234");
+
+		login(userId, userPw);
+	</script>
 </head>
+
 <body>
 </body>
+
 </html>
