@@ -10,6 +10,22 @@
 			$(".wrap_1 p:first")
 				.text("서연주")
 				.css("border", "solid 1px #6969ff");
+
+			$(".wrap_1 p.active")
+				.removeClass("active")
+				.addClass("on");
+
+			$(".wrap_1 p:eq(2) a")
+				.attr("href", "http://www.naver.com");
+
+			$(".wrap_1 p:eq(3) input").val("aaaaaazzKoreazzaaaaa");
+
+			$(".wrap_2 p:first").after("<p>After(추가2)</p>");
+			$(".wrap_2 p:first").before("<p>Before(추가1)</p>");
+
+			$("wrap_3 p")
+				.unwrap()
+				.wrapInner("<strong/>");
 		});
 
 	</script>
