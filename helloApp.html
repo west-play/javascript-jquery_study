@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>안녕안녕</title>
+    <script type="text/javascript" src="httpRequest.js"></script>
+    <script type="text/javascript">
+        function helloToServer() {
+            var params = "name=" + encodeURIComponent(document.f.name.value);
+            sendRequest("hello.jsp", params, helloFromServer, "POST");
+        }
+
+        function helloFromServer() {
+            if (httpRequest.readyState == 4) {
+                if (httpRequest.status == 200) {
+                    alert("서버응답:" + httpRequest.responseText);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="f">
+        <input type="text" name="name" />
+        <input type="button" value="입력" onclick="helloToServer()" />
+    </form>
+</body>
+
+</html>
